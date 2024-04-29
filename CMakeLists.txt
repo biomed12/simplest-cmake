@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 20)
 project(cpp-project)
 
 find_package(Boost REQUIRED)
-find_package(OpenSSL REQUIRED) 
+find_package(OpenSSL REQUIRED)
 
 add_executable(main main.cpp)
-target_link_libraries(main OpenSSL::SSL)
+target_link_libraries(main PUBLIC OpenSSL::SSL -lboost_url)
