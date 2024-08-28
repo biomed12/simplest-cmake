@@ -8,4 +8,4 @@ find_package(Boost REQUIRED)
 find_package(OpenSSL REQUIRED)
 
 add_executable(main main.cpp)
-target_link_libraries(main PUBLIC OpenSSL::SSL -lboost_url)
+target_link_libraries(main PUBLIC OpenSSL::SSL)
